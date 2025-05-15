@@ -1,0 +1,18 @@
+<div class="calculator">
+    <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+      <h2>Calculadora</h2>
+      <div class="form-box">
+        <label for="number1">Número 1</label>
+        <input type="number" formControlName="number1">
+      </div>
+      <div class="form-box">
+        <label for="number2">Número 2</label>
+        <input type="number" formControlName="number2">
+      </div>
+      <button type="submit" [disabled]="!this.form.valid">Somar</button>
+
+      <div class="result-display">
+        <p>Resultado: <span>{{ result }}</span></p>
+      </div>
+    </form>
+</div>
