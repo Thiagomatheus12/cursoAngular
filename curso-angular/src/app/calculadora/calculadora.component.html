@@ -11,8 +11,10 @@
       </div>
       <button type="submit" [disabled]="!this.form.valid">Somar</button>
 
-      <div class="result-display">
-        <p>Resultado: <span>{{ result }}</span></p>
-      </div>
+      @if(result) {
+        <div class="result-display">
+          <p>Resultado: <span>{{ result }}</span></p>
+        </div>
+      }
     </form>
 </div>

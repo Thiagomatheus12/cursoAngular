@@ -1,0 +1,26 @@
+<div class="list">
+  <h1>Lista de Compras</h1>
+
+  <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+    <input type="text" formControlName="itemList" placeholder="Digite o nome do item">
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Item</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>0</td>
+          <td>i</td>
+          <td><input type="checkbox" name="" id=""></td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
