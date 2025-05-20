@@ -15,11 +15,13 @@
       </tr>
     </thead>
     <tbody>
+      @for( element of list; track element.id ) {
         <tr>
-          <td>0</td>
-          <td>i</td>
-          <td><input type="checkbox" name="" id=""></td>
+          <td>{{ element.id }}</td>
+          <td>{{ element.name }}</td>
+          <td><input type="checkbox"></td>
         </tr>
+      }
     </tbody>
   </table>
 
